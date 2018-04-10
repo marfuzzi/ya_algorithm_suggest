@@ -11,9 +11,9 @@ input.oninput = () => {
         streetContainer.innerHTML = '';
         return;
     }
-    // console.time('search');
+    console.time('search');
     streetContainer.innerHTML = Object.keys(tree.find(input.value)).join('<br/>');
-    // console.timeEnd('search');
+    console.timeEnd('search');
 };
 
 button.addEventListener('click', () => {

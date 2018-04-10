@@ -193,10 +193,10 @@ class Tree {
 
 const tree = new Tree();
 // tree.add('cacao');
-// console.time('timer');
+console.time('create tree');
 streets.forEach(function (street) {
     tree.add(street);
 });
-// console.timeEnd('timer');
+console.timeEnd('create tree');
 // console.log('tree',tree);
 export default tree;
